@@ -1,0 +1,53 @@
+QUES: HASHSET
+ANS
+
+package ad1;
+
+import java.util.*;
+
+public class AD1 
+{
+
+ 
+    public static void main(String[] args) 
+    {
+        HashSet hashSet= new HashSet();
+        hashSet.add("1");
+        hashSet.add("2");
+        hashSet.add("3");
+        hashSet.add("4");
+        System.out.println(hashSet);
+        
+        HashSet hashSet2= new HashSet();
+        hashSet2.add("5");
+        hashSet2.add("6");
+        hashSet2.add("3");
+        hashSet2.add("2");
+        System.out.println(hashSet2);
+        hashSet.retainAll(hashSet2);
+        System.out.println(hashSet);
+    }
+    
+}
+
+QUES: HASHMAP
+ANS
+
+package ad1;
+
+import java.util.*;
+
+
+public class Map1 
+{
+       public static void main(String[] args) 
+       {
+           Map ob= new HashMap();
+           ob.put("Bread", 20);
+           ob.put("Pasta", 100);
+           
+           ob.replace("Pasta",100,1000);
+           System.out.println(ob);
+       }
+    
+}
